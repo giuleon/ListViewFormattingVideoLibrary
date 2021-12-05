@@ -1,0 +1,140 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json",
+    "schema": "https://developer.microsoft.com/json-schemas/sp/view-formatting.schema.json",
+    "hideSelection": true,
+    "hideColumnHeader": true,
+    "rowFormatter": {
+      "elmType": "div",
+      "attributes": {
+        "class": "sp-row-card"
+      },
+      "children": [
+        {
+          "elmType": "div",
+          "style": {
+            "margin-left": "10px",
+            "margin-right": "25px",
+            "height": "100%"
+          },
+          "children": [
+            {
+              "elmType": "img",
+              "attributes": {
+                "src": "[$Thumbnail.serverRelativeUrl]",
+                "title": "[$Title]"
+              },
+              "style": {
+                "border": "1px solid #808080",
+                "border-radius": "2%",
+                "width": "500px"
+              }
+            }
+          ]
+        },
+        {
+          "elmType": "div",
+          "style": {
+            "text-align": "left",
+            "border-left": "2px solid rgba(200, 200, 200, 0.5)",
+            "padding-left": "2px"
+          },
+          "children": [
+            {
+              "elmType": "div",
+              "attributes": {
+                "class": "sp-row-title"
+              },
+              "style": {
+                "font-weight": "lighter",
+                "font-size": "x-large",
+                "margin-left": "10px"
+              },
+              "txtContent": "=if([$Title] == '', [$FileLeafRef], [$Title])"
+            },
+            {
+              "elmType": "div",
+              "attributes": {
+                "class": "sp-row-listPadding"
+              },
+              "style": {
+                "margin-bottom": "10px",
+                "margin-left": "10px",
+                "font-size": "larger"
+              },
+              "txtContent": "=if(toLocaleDateString([$Date]) == '', toLocaleDateString([$Created]), toLocaleDateString([$Date]))"
+            },
+            {
+              "elmType": "span",
+              "style": {
+                "font-weight": "normal",
+                "font-size": "large",
+                "display": "=if([$VideoDescription] == '', 'none', 'block')",
+                "margin-top": "10px",
+                "margin-left": "10px"
+              },
+              "attributes": {
+                "class": "sp-row-listPadding"
+              },
+              "txtContent": "Video Description:"
+            },
+            {
+              "elmType": "div",
+              "attributes": {
+                "class": "sp-row-listPadding"
+              },
+              "style": {
+                "margin": "10px 10px",
+                "width": "70%",
+                "font-size": "larger"
+              },
+              "txtContent": "[$VideoDescription]"
+            },
+            {
+              "elmType": "button",
+              "customRowAction": {
+                "action": "defaultClick"
+              },
+              "style": {
+                "width": "150px",
+                "margin-left": "10px",
+                "display": "span"
+              },
+              "txtContent": "Watch Now",
+              "attributes": {
+                "class": "sp-row-button ms-bgColor-themePrimary sp-row-button ms-bgColor-themeDarkAlt--hover ms-fontWeight-semibold ms-fontColor-white"
+              }
+            },
+            {
+              "elmType": "button",
+              "customRowAction": {
+                "action": "share"
+              },
+              "style": {
+                "width": "150px",
+                "margin-left": "10px"
+              },
+              "txtContent": "Share",
+              "attributes": {
+                "class": "sp-row-button ms-bgColor-grey sp-row-button ms-bgColor-neutralQuaternary--hover ms-fontColor-white--hover"
+              }
+            },
+            {
+              "elmType": "button",
+              "customRowAction": {
+                "action": "editProps"
+              },
+              "style": {
+                "width": "150px",
+                "margin-left": "10px",
+                "display": "=(if(@me == [$Author.email], 'span', 'none'))"
+              },
+              "txtContent": "Edit Details",
+              "attributes": {
+                "class": "sp-row-button ms-bgColor-grey sp-row-button ms-bgColor-neutralQuaternary--hover ms-fontColor-white--hover"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
