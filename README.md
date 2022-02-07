@@ -1,7 +1,7 @@
 # 📽️How to create a video library view with List Formatting in SharePoint
 This sample demonstrate how to use list view formatting to set a video library view in a SharePoint document library
 
-![📽️How to create a video library view with List Formatting in SharePoint](./preview.png)
+![📽️How to create a video library view with List Formatting in SharePoint](./preview.gif)
 
 ## Requirements
 The following columns have to be created in the SharePoint document library:
