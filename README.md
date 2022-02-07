@@ -13,8 +13,10 @@ The following columns have to be created in the SharePoint document library:
 - **Like**: Person Multiselection Column
 - **Dislike**: Person Multiselection Column
 
-📺check my YouTube Video tutorial to follow a step-by-step guide:
+📺check my YouTube Video tutorial to create a video library view:
 https://youtu.be/pP8DcE-V8uA
+📺check my YouTube Video tutorial to add the like and dislike button:
+https://youtu.be/0bGwNUojk0Y
 
 🔗Microsoft article about List Formatting:
 https://docs.microsoft.com/en-us/sharepoint/dev/declarative-customization/column-formatting
