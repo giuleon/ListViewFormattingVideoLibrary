@@ -10,6 +10,8 @@ The following columns have to be created in the SharePoint document library:
 - **Date**: Date and Time column
 - **Thumbnail**: Image column
 - **Availability**: Calculated column that displays the buttons
+- **Like**: Person Multiselection Column
+- **Dislike**: Person Multiselection Column
 
 📺check my YouTube Video tutorial to follow a step-by-step guide:
 https://youtu.be/pP8DcE-V8uA
