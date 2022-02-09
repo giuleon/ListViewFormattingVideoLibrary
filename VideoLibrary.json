@@ -41,6 +41,7 @@
         "children": [
           {
             "elmType": "div",
+            "inlineEditField": "[$Title]",
             "attributes": {
               "class": "sp-row-title"
             },
@@ -53,6 +54,7 @@
           },
           {
             "elmType": "div",
+            "inlineEditField": "[$Date]",
             "attributes": {
               "class": "sp-row-listPadding"
             },
@@ -79,6 +81,7 @@
           },
           {
             "elmType": "div",
+            "inlineEditField": "[$VideoDescription]",
             "attributes": {
               "class": "sp-row-listPadding"
             },
