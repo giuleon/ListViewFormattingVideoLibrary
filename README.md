@@ -9,7 +9,6 @@ The following columns have to be created in the SharePoint document library:
 - **VideoDescrition**: Multiline text (no rich html field) column
 - **Date**: Date and Time column
 - **Thumbnail**: Image column
-- **Availability**: Calculated column that displays the buttons
 - **Like**: Person Multiselection Column
 - **Dislike**: Person Multiselection Column
 
